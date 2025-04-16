@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrap">
+    <h2>My Gallery</h2>
+   <div class="pic">
+ <img   class="img1" src="image/po2.jpg" onclick="showImage(src)">
+ <img   class="img1" src="image/po1.jpg" onclick="showImage(src)">
+ <img   class="img1" src="image/po3.jpg" onclick="showImage(src)">
+ <img   class="img1" src="image/po4.jpg" onclick="showImage(src)">
+</div>
+ <div class="pic">
+ <img   class="img1" src="image/po5.jpg" onclick="showImage(src)">
+ <img   class="img1" src="image/po6.jpg" onclick="showImage(src)">
+ <img   class="img1" src="image/po7.jpg" onclick="showImage(src)">
+ <img   class="img1" src="image/po8.jpg" onclick="showImage(src)">
+</div>
+<div class="pic1">
+<img class="img2" src="image/po9.jpg" onclick="showImage(src)">
+<img class="img2" src="image/po10.jpg" onclick="showImage(src)">
+<img class="img2" src="image/po11.jpg" onclick="showImage(src)">
+<img class="img2" src="image/images.jpeg" onclick="showImage(src)">
+</div>
+<div class="pic3">
+    <img class="img3" src="image/po12.jpg" onclick="showImage(src)">
+</div>
+</div>
+<div class="last">
+    <div class="pa">This page was edited in 12/12/2024</div>
+</div>
+<div class="image-popup-container" id="imagePopup">
+    <span class="close-button" onclick="closeImage()">×</span>
+    <img src="" alt="Popup Image" id="popupImage">
+</div>
+<script>
+    // function to show image when we click on a image
+function showImage(imageSrc) {
+let popupImage = document.getElementById("popupImage");
+popupImage.src = imageSrc;
+
+let imagePopup = document.getElementById("imagePopup");
+imagePopup.style.display = "block";
+document.body.style.overflow = "hidden";
+}
+// function to hide the image when we click on cross button
+function closeImage() {
+let imagePopup = document.getElementById("imagePopup");
+imagePopup.style.display = "none";
+document.body.style.overflow = "auto";
+}
+</script>
+</body>
+</html>

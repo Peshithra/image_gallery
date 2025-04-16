@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Knewave&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwigley&family=Sevillana&display=swap');
+*{
+    margin:0%;
+    padding: 0%;
+}
+body{
+    width: 100%;
+    height:auto;
+    background-color:#122C18;
+}
+.wrap{
+	width: 850px;
+	height: 600px;
+	/* background-color: aqua; */
+	margin: 0 auto;
+	box-shadow: 2px 2px 50px 40px;
+	border-radius: 20px;
+h2{
+	margin:0 auto;
+	margin-top:20px;
+	text-align: center;
+	font-size: 40px;
+	color:red;
+	
+	margin-bottom: 50px;
+	animation: animate 3s infinite;
+}
+
+.img1{
+	width: 100px;
+	height: 100px;
+	border-radius: 20px;
+	box-shadow: 1px 1px 20px 5px;
+}
+.img1:hover{
+	width: 120px;
+	height: 120px;
+}
+.pic{
+	width: 500px;
+	height: 140px;
+/* background-color: blue; */
+display: flex;
+justify-content: space-between;
+margin-left: 30px;
+
+}
+
+.pic1{
+	width: 740px;
+	height: 140px;
+/* background-color:azure; */
+display: flex;
+justify-content: space-between;
+}
+.img2{
+width: 160px;
+height:140px ;
+border-radius: 20px;
+margin-left: 50px;
+box-shadow: 1px 1px 20px 5px;
+}
+.img2:hover{
+	width: 170px;
+height:150px ;
+}
+.img3{
+	position: absolute;
+	margin-top: -420px;
+	margin-left: 580px;
+	border-radius: 20px;
+	box-shadow: 1px 1px 20px 5px;
+}
+.img3:hover{
+	width: 260px;
+	height:250px;
+}
+}
+.image-popup-container {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.close-button {
+	position: absolute;
+	top: 20px;
+	right: 50px;
+	font-size:60px;
+	color: #fff;
+	cursor: pointer;
+}
+.close-button:hover{
+	color: red;
+}
+#popupImage {
+	display: block;
+	max-width: 80%;
+	max-height: 80%;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.copy{
+	color:white;
+	margin-left: 20px;
+	font-family:allura; 
+	
+}
+/* .all{
+	width: 830px;
+	margin: 0 auto;
+	background-color: aqua;
+} */
+
+.pa{
+	
+	margin-top: 30px;
+	color:white;
+	text-align: center;
+	
+}
+.pa1{
+	padding-left: 20px;
+}
